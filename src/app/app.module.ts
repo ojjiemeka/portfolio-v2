@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './pages/index/index.component';
 import { HeaderComponent } from './inc/header/header.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { FabComponent } from './inc/fab/fab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    HeaderComponent
+    HeaderComponent,
+    ProjectsComponent,
+    ContactComponent,
+    FabComponent
   ],
   imports: [
     BrowserModule,
