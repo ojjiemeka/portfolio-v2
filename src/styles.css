@@ -86,7 +86,7 @@ li > a:hover {
   margin-top: 4em;
 }
 
-#project-section {
+#projects {
   height: 85vh;
 }
 
@@ -99,7 +99,7 @@ li > a:hover {
 }
 /* sections */
 
-/* SECTION 1 */
+/* SECTION- INDEX */
 
 .wrapper {
   /* height: 100vh; */
@@ -157,7 +157,11 @@ li > a:hover {
   font-size: 14px;
   padding: 0.25rem;
 }
-
+.console-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .typewriter {
   overflow: hidden;
   width: fit-content;
@@ -745,7 +749,7 @@ input{
   #skills {
     margin-top: 22em;
   }
-  #project-section {
+  #projects {
     margin-top: 87em;
   }
 
@@ -875,7 +879,7 @@ input{
     margin-top: 3em;
   }
 
-  #project-section {
+  #projects {
     margin-top: 70em;
   }
   #social-links {
@@ -1002,7 +1006,7 @@ input{
     margin-top: 7em;
   }
 
-  #project-section {
+  #projects {
     margin-top: 65em;
   }
 }
@@ -1012,7 +1016,7 @@ input{
     margin-top: 0em;
   }
 
-  #project-section {
+  #projects {
     margin-top: 55em;
   }
 }
@@ -1022,7 +1026,7 @@ input{
     margin-top: 7em;
   }
 
-  #project-section {
+  #projects {
     margin-top: 65em;
   }
 }
@@ -1036,7 +1040,7 @@ input{
     margin-top: 20em;
   }
 
-  #project-section {
+  #projects {
     margin-top: 70em;
   }
   .project-detail {
@@ -1055,7 +1059,7 @@ input{
   #skills {
     margin-top: 22em;
   }
-  #project-section {
+  #projects {
     margin-top: 65em;
   }
   #social-links {
@@ -1128,7 +1132,7 @@ input{
   #skills {
     margin-top: 0em;
   }
-  #project-section {
+  #projects {
     margin-top: 20em;
   }
   .console {

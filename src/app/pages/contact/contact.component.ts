@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { contactForm } from 'src/app/@core/models/mail.model';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  model: contactForm = new contactForm();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  sendMail(form: NgForm){
+    if (!form.valid) {
+      return;
+    }
+    console.log(this.model)
   }
 
 }
