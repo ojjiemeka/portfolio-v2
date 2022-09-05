@@ -1019,6 +1019,9 @@ input{
   #projects {
     margin-top: 55em;
   }
+  .project-detail {
+    top: 53%;
+}
 }
 
 @media screen and (min-width: 414px) {
@@ -1042,9 +1045,10 @@ input{
 
   #projects {
     margin-top: 70em;
+        height: 100%;
   }
   .project-detail {
-    top: 50%;
+    top: 55%;
   }
   .nav-btn {
     display: block !important;
