@@ -1,28 +1,31 @@
 <div>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid nav-content">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" routerLink="/">Navbar</a>
 
       <div class="collapse navbar-collapse my-nav me-lg-5" id="navbarSupportedContent">
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#index">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="index#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="index#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#project-section">Projects</a>
+            <a class="nav-link" href="index#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Resume</a>
+            <a class="nav-link" href="https://drive.google.com/file/d/1Mru0PZ-Gt6rV_lDNyUAxcQN7X1x_bzI5/view?usp=sharing" target="_blank">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="contact-me">Contact</a>
           </li>
         </ul>
       </div>
-      <i class='bx bx-menu bx-md nav-btn nav-item' type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
+      <i class='bx bx-menu bx-md nav-btn nav-item' type="button" (click)="toggleSidebar()" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></i>
     </div>
   </nav>
 </div>
@@ -30,24 +33,33 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <button type="button" class="btn-close" (click)="toggleSidebar()" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#index">Home</a>
+    <ul class="d-grid justify-content-center nav">
+      <li class="nav-item" [ngClass]="sidebar? 'title' : '' ">
+        <a class="nav-link" routerLink="index">Home</a>
+        <span class="" [ngClass]="sidebar? 'list-block' : '' "></span>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
+      <li class="nav-item" [ngClass]="sidebar? 'title' : '' ">
+        <a class="nav-link" href="index#about">About</a>
+        <span class="" [ngClass]="sidebar? 'list-block' : '' "></span>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skills">Skills</a>
+      <li class="nav-item" [ngClass]="sidebar? 'title' : '' ">
+        <a class="nav-link" href="index#skills">Skills</a>
+        <span class="" [ngClass]="sidebar? 'list-block' : '' "></span>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#project-section">Projects</a>
+      <li class="nav-item" [ngClass]="sidebar? 'title' : '' ">
+        <a class="nav-link" href="index#projects">Projects</a>
+        <span class="" [ngClass]="sidebar? 'list-block' : '' "></span>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Resume</a>
+      <li class="nav-item" [ngClass]="sidebar? 'title' : '' ">
+        <a class="nav-link" routerLink="https://drive.google.com/file/d/1Mru0PZ-Gt6rV_lDNyUAxcQN7X1x_bzI5/view?usp=sharing">Resume</a>
+        <span class="" [ngClass]="sidebar? 'list-block' : '' "></span>
+      </li>
+      <li class="nav-item" [ngClass]="sidebar? 'title' : '' ">
+        <a class="nav-link" routerLink="contact-me">Contact</a>
+        <span class="" [ngClass]="sidebar? 'list-block' : '' "></span>
       </li>
     </ul>
   </div>
