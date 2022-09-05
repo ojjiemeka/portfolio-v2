@@ -762,7 +762,8 @@ input{
     left: 80%;
 }
   .navbar {
-    width: 94%;
+    width: 100%;
+    margin-left: -10px;
     padding: 5px 15px !important;
   }
   .offcanvas {
@@ -882,7 +883,8 @@ input{
     left: 85%;
 }
   .navbar {
-    width: 94%;
+    width: 100%;
+    margin-left: -10px;
     padding: 5px 15px !important;
   }
   .offcanvas {
@@ -1063,6 +1065,9 @@ input{
   .nav-btn {
     display: block !important;
     color: #EBDFC9 !important;
+  }
+  .navbar {
+    margin-left: -35px;
   }
   .about-img {
     height: 385px;
