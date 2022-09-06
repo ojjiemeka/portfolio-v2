@@ -54,6 +54,15 @@ span {
 .nav-content {
   display: contents !important;
 }
+.nav-logo{
+  font-weight: 700;
+  background: #333333 ;
+  background: -webkit-linear-gradient(to right, #333333, #f0a824);
+  background: linear-gradient(to right, #333333, #f0a824);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 li > a {
   color: #fff !important;
