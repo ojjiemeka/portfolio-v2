@@ -20,11 +20,11 @@
         <div class="tabs"> </div>
         <div class="text">
           <br> -> <span class="pink">'@about me start'</span> after 12s
-          <br> ->  starting server <span class="pink">..... Compiled successfully</span>
+          <br> -> Friendly Neighbourhood <span class="pink">Frontend Dev</span>
           <br> ->  <span class="orange">I'm a Nigerian <img src="https://img.icons8.com/clouds/40/000000/nigeria-flag.png"/></span>
           <br> ->  <span class="blue"> Living in Delta State</span>
           <br> ->  I stand on a sweet spot where <span class="orange">DESIGN</span> and <span class="pink">CODE</span> intersect
-          <br> <span class="blue"> ->  </span> Would you like to recomplie? <span class="orange">Yes</span>
+          <br> <span class="blue"> ->  </span> Would you like to view my resume?<span class="orange">Yes</span>
           <br> ->  Success <span class="blue">234</span> tests ran, <span class="blue">234</span> passes, <span
           class="blue">0</span> failures
           <br> ->  ... <span class="pink">'Downloading Resume'</span> after 8.81 s
@@ -152,12 +152,21 @@
     <ul>
       <li data-aos="fade-up-right" data-aos-duration="1000">
         <div class="content">
+          <div class="quick-links-left">
+            <div class="project-links-btn-left">
+              <i class='bx bxs-share-alt bx-md' (click)="showLink1()" ></i>
+            </div>
+            <div class="" [ngClass]="projectLink1? 'project-links bounce project-link-fade-left' : 'fadeOut hide-links ' ">
+              <a href="#" class="mx-2"><i class='bx bxl-github bx-md'></i></a>
+              <a href="#"><i class='bx bx-link-external bx-md'></i></a>
+            </div>
+          </div>
           <div class="time">
             <img class="project-img" src="../../../assets/projects/ionic-app.png" alt="" srcset="">
           </div>
           <div class="project-detail text-center">
             <h3>Finance App</h3>
-            <p> Built with Ionic 4, features user authentication, Oauth authentication, integration of
+            <p> Built with Ionic 4, user authentication, integration of
               REST APIs from Laravel backend & 3rd party APIs</p>
             <img class="project-badge mx-2" src="https://img.icons8.com/color/96/000000/html-5--v1.png" />
             <img class="project-badge mx-2" src="https://img.icons8.com/color/96/000000/css3.png" />
@@ -168,8 +177,18 @@
           </div>
         </div>
       </li>
-      <li data-aos="fade-up-right" data-aos-duration="1000">
+
+      <li data-aos="fade-up-left" data-aos-duration="1000">
         <div class="content">
+          <div class="quick-links-right">
+            <div class="" [ngClass]="projectLink2? 'project-links bounce project-link-fade-right' : ' hide-links' ">
+              <a href="http://https://bull-option.com/"><i class='bx bx-link-external bx-md'></i></a>
+              <a href="https://github.com/ojjiemeka/bulloptionfx-V2.git" class="mx-2"><i class='bx bxl-github bx-md'></i></a>
+            </div>
+            <div class="project-links-btn-right">
+              <i class='bx bxs-share-alt bx-md' (click)="showLink2()" ></i>
+            </div>
+          </div>
           <div class="time">
             <img class="project-img" src="../../../assets/projects/project2.png" alt="" srcset="">
           </div>
@@ -185,8 +204,18 @@
           </div>
         </div>
       </li>
-      <li data-aos="fade-up-left" data-aos-duration="1000">
+
+      <li data-aos="fade-up-right" data-aos-duration="1000">
         <div class="content">
+          <div class="quick-links-left">
+            <div class="project-links-btn-left">
+              <i class='bx bxs-share-alt bx-md' (click)="showLink3()" ></i>
+            </div>
+            <div class="" [ngClass]="projectLink3? 'project-links bounce project-link-fade-left' : 'hide-links ' ">
+              <a href="https://github.com/ojjiemeka/simple-laravel-chat-app" class="mx-2"><i class='bx bxl-github bx-md'></i></a>
+              <a href="chukwuemeke-portfolio.000webhostapp.com"><i class='bx bx-link-external bx-md'></i></a>
+            </div>
+          </div>
           <div class="time">
             <img class="project-img" src="../../../assets/projects/laravel-chat-app.png" alt="" srcset="">
           </div>
@@ -201,13 +230,23 @@
           </div>
         </div>
       </li>
-      <li data-aos="fade-up-right" data-aos-duration="1000">
+
+      <li data-aos="fade-up-left" data-aos-duration="1000">
         <div class="content">
+          <div class="quick-links-right">
+            <div class="" [ngClass]="projectLink4? 'project-links bounce project-link-fade-right' : 'hide-links ' ">
+              <a href="https://github.com/ojjiemeka/ship2xpress" class="mx-2"><i class='bx bxl-github bx-md'></i></a>
+              <a href="https://ship2xpress.netlify.app/"><i class='bx bx-link-external bx-md'></i></a>
+            </div>
+            <div class="project-links-btn-right">
+              <i class='bx bxs-share-alt bx-md' (click)="showLink4()" ></i>
+            </div>
+          </div>
           <div class="time">
             <img class="project-img" src="../../../assets/projects/pwa-app.png" alt="" srcset="">
           </div>
           <div class="project-detail text-center">
-            <h3>PWA App</h3>
+            <h3>Logistics Website</h3>
             <p>Built a fianance PWA app using laravel and JavaScript, implementing REST APIs and ServiceWorkers</p>
             <img class="project-badge mx-2" src="https://img.icons8.com/color/96/000000/html-5--v1.png" />
             <img class="project-badge mx-2" src="https://img.icons8.com/color/96/000000/css3.png" />
@@ -217,6 +256,7 @@
           </div>
         </div>
       </li>
+
       <li>
         <div class="content text-center">
             <a class="projects" routerLink="/projects">View all projects</a>
